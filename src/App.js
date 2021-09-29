@@ -7,8 +7,12 @@ import {Cities} from "./components/City";
 import {citiesFromPersons} from "./utilities/citiesFromPersons";
 
 function App() {
+  const citiesVanPersons = [...new Set(PERSON_DATA.map(p => p.city))];
+  console.log(citiesVanPersons);
+
+
   return (
-      <div>
+      <>
         <Numbers title="Nummers" numbers={NUMBER_DATA} />
         <Numbers title="Nummers groter dan 6" numbers={NUMBER_DATA.filter(n => n > 6)} />
         <Numbers title="Nummers x 2" numbers={NUMBER_DATA.map(n => n * 2)} />
@@ -19,7 +23,7 @@ function App() {
         <Numbers title="Leeftijden van de personen gesorteerd" numbers={[...new Set(PERSON_DATA.map(p => p.age))].sort((a1, a2) => a1 - a2)} />
         <Cities title="Steden test" cities={[{name: "Antwerpen", numberOfPersons: 125}, {name: "Brussel", numberOfPersons: 32}]} />
         <Cities title="Steden waar personen wonen" cities={citiesFromPersons(PERSON_DATA)} />
-      </div>
+      </>
   );
 }
 
