@@ -5,6 +5,11 @@ export const CARS_DATA = [
     {name: "auto van mijn zus", brand: "Fiat", type: "Punto", color: "geel"},
     {name: "die van mijn pa", brand: "Volvo", color: "zwart"},
     {name: "geitje", brand: "Citroën"},
+    {name: "auto1", brand: "Peugeot", type: "505", color: "grijs"},
+    {name: "auto2", brand: "Fiat", type: "Panda"},
+    {name: "auto3", brand: "Fiat", type: "Tipo", color: "groen"},
+    {name: "auto4", brand: "Citroën", type: "C4", color: "rood"},
+    {name: "auto5", brand: "Fiat", type: "Panda", color: "rood"}
 ];
 
 export const KLEUREN = [
