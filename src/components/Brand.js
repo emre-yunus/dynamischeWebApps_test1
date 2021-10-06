@@ -3,7 +3,7 @@ export function Brands(props) {
     return (
         <div className="section">
             <h3>{title}</h3>
-            {cars.map(car => <Brand name={car.name} key={car.name} />)}
+            {cars.map(car => <Brand name={car.brand} key={car.name} />)}
         </div>
     )
 }

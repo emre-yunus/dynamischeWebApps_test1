@@ -10,7 +10,7 @@ function App() {
       <>
         <Cars title="Auto's" cars={CARS_DATA} />
         <List title="Een test lijst" items={ITEMS} />
-        <Brands title="Test merken" cars={CARS_DATA} />
+        <Brands title="Merken" cars={CARS_DATA} />
       </>
   );
 }
