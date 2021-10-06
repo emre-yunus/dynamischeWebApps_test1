@@ -1,8 +1,10 @@
+import {ITEMS} from "../data/data";
+import {List} from "./List";
+
 export function Brands(props) {
     const {title, cars} = props;
     const brands = [...new Set(cars.map(c => c.brand))];
     const brandsWithNumbers = brands.map(b => ({name: b, numberOfCars: cars.reduce((counter, p) => (p.brand===b ? ++counter : counter), 0)}));
-    console.log(brandsWithNumbers)
     return (
         <div className="section">
             <h3>{title}</h3>
@@ -17,6 +19,7 @@ function Brand(props) {
         <div className="card big">
             <div>{name}</div>
             <div>{numberOfCars}</div>
+            <List title="Types" items={ITEMS}></List>
         </div>
     )
 }
