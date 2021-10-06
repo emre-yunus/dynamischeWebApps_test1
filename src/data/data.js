@@ -1,3 +1,11 @@
+export const ITEMS = [
+    {nr: 1, name: "een"},
+    {nr: 2, name: "twee"},
+    {nr: 3, name: "drie"},
+    {nr: 4, name: "vier"},
+    {nr: 5, name: "twee"}
+    ];
+
 export const NUMBER_DATA = [1, 3, 5, 2, 6, 7, 34, 12, 66, 98, 11, 2];
 
 export const CARS_DATA = [
